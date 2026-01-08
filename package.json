@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp -r src/html/* dist/html && cp -r src/styles/* dist/styles && cp -r index.html dist/",
+    "build": "tsc && cp -r src/html/* dist/ && cp -r src/styles/* dist/styles",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],

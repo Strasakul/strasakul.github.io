@@ -82,7 +82,7 @@ export const themes: Theme[] = [
             "--border-color": "#444444",
             "--font-heading": "'Press Start 2P', cursive",
             "--font-body": "'Press Start 2P', cursive",
-            "font-size": "14px",
+            "font-size": "10px",
         }
     },
 ];
