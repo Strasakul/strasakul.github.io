@@ -1,32 +1,11 @@
-function getCurrentPage(): string {
-    return window.location.pathname.split("/").pop() ?? "";
+import { createHeader } from "./header.js";
+import { createFooter } from "./footer.js";
+import { initThemeDropdown } from "./themeDropdown.js";    
+
+function main() {
+    createHeader();
+    createFooter();
+    initThemeDropdown();
 }
 
-function createNav(){
-    const navRoot = document.getElementById("nav-root");
-    if(!navRoot) return;
-
-    // Dropdown Menu
-    navRoot.innerHTML = `
-     <select id="pageSelect">
-        <option value="">Got to...</option>
-        <option value="index.html">Home</option>
-        <option value="second.html">Second Page</option>
-     </select>
-    `;
-
-    const pageSelect = document.getElementById("pageSelect") as HTMLSelectElement | null;
-    const currentPage = getCurrentPage();
-
-    if(pageSelect) {
-        pageSelect.value = currentPage;
-
-        pageSelect.addEventListener("change", () => {
-            if(pageSelect.value) {
-                window.location.href = pageSelect.value;
-            }
-        });
-    }
-}
-
-createNav();
+window.addEventListener("DOMContentLoaded", main);
