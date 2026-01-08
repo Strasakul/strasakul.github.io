@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "rootDir": "src/ts",
+    "outDir": "dist/ts",
+    "sourceMap": true,
+    "removeComments": true,
+  }
+}
+

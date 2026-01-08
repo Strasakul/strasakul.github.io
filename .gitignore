@@ -1,0 +1,12 @@
+# Node dependencies (if using npm)
+node_modules/
+
+# TypeScript compiled JS
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code workspace settings
+.vscode/
