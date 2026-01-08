@@ -1,0 +1,40 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700&family=Cinzel:wght@400;700&family=Press+Start+2P&family=EB+Garamond:wght@400;700&display=swap');
+
+/* ============================================================
+    CORE THEMES (The Foundation)
+   ============================================================ */
+
+/* DEFAULT LIGHT THEME (Pro-Esports) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1b;
+  --primary-color: #0066ff;
+  --header-footer-bg: #f5f7fa;
+  --link-color: #0052cc;
+  --surface-color: #f0f2f5;
+  --border-color: #d1d5db;
+  --success: #28a745;
+  --error: #dc3545;
+
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* DEFAULT DARK THEME (RGB Midnight) */
+/* This triggers if the OS is dark OR if you manually set <html data-theme="dark"> */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-color: #0b0e14;
+    --text-color: #e2e8f0;
+    --primary-color: #bb86fc;
+    --header-footer-bg: #151921;
+    --link-color: #03dac6;
+    --surface-color: #1c222d;
+    --border-color: #2d3748;
+    --success: #4caf50;
+    --error: #cf6679;
+
+    --font-body: 'JetBrains Mono', monospace;
+  }
+}
